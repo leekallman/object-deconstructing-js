@@ -6,6 +6,17 @@ const user = {
     'age': 43
 }
 
-const { name } = user;
+// const { name } = user;
 
-console.log(name);
+// console.log(name);
+
+//works same as above
+// let name;
+
+// ({ name } = user);
+
+// console.log(name)
+
+const { name, age, salary = 123455 } = user;
+
+console.log(name, age, salary);
